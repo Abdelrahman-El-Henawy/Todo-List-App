@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Note App</title>
+</head>
+<body>
+    
+    <main class="container m-5 p-5 rounded mx-auto bg-light shadow">
+        <header class="row">
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-center gap-3 text-primary">
+                    <i class="fa fa-check bg-primary text-white fs-1 rounded p-2"></i>
+                    <h1 class="text-decoration-underline">My Todo List</h1>
+                </div>
+            </div>
+        </header>
+        
+        <section id="addTask" class="mt-5">
+            <div class="row">
+                <div class="col-lg-12 position-relative">
+                    <input type="text" class="form-control-lg form-control" name="" id="taskInput" placeholder="Add New Task">
+                    <div class="d-flex gap-2 position-absolute top-50 add">
+                        <input type="date" name="calenderBtn" class="form-control" id="dateInput">
+                        <button class="btn btn-primary d-block" id="addBtn">Add</button>
+                        <button class="btn btn-primary d-none" id="updateBtn">Update</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="display" class="mt-5">
+            <div class="row" id="taskContent">
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

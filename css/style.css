@@ -1,0 +1,7 @@
+.add{
+    right: 20px;
+    transform: translateY(-50%);
+}
+i{
+    cursor: pointer;
+}
